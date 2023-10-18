@@ -18,12 +18,3 @@
     - Developed Python scripts leveraging arXiv's API for data extraction and utilized NLTK for in-depth textual analysis.
     - Conducted keyword analysis and visualizations, pinpointing emerging themes in recent mathematical preprints.
 
----
-
-### [SQL Data Exploration in Jupyter Notebook](./SQL)
-
-- **Languages**: MySQL, Python
-- **Description**: 
-    - Leveraged fundamental SQL tools, including JOIN operations, aggregations, and string functions, to analyze multiple datasets.
-    - Employed Python for enhancing and automating SQL data retrieval.
-
