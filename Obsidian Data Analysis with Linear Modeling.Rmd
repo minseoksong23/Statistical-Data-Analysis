@@ -1,8 +1,13 @@
 ---
 title: "Obsidian Data Analysis"
 output:
+<<<<<<< HEAD
   html_document: default
   pdf_document: default
+=======
+  pdf_document: default
+  html_document: default
+>>>>>>> 77593d639c48d2bd42c99e974adf3317690650a4
 ---
 ## Preliminary exploration and Data cleaning
 
@@ -119,6 +124,10 @@ ntrain = 410; nval = 203
 validation = sample(n, nval, replace=FALSE)
 train = setdiff(1:n, validation)
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77593d639c48d2bd42c99e974adf3317690650a4
 Initially, we opt to exclude the ID as a covariate in our regression model. Beyond the evident reason that each data point possesses a unique ID, there's an absence of discernible patterns that would justify its inclusion. For instance, when we limit the ID to its first three digits, it becomes perfectly collinear with the "site" covariate. Expanding the ID beyond these initial digits results in an overly complex model, which would inflate the variance excessively.
 
 ```{r}
@@ -303,4 +312,4 @@ Both models appear to achieve satisfactory coverage levels. Overall, lmod2 demon
 
 ## Conclusion
 
-Our final model is log(mass) ~ (type + site + element_Rb + element_Sr + element_Y * element_Zr). While this model isn't flawless, we have reasonable confidence in its validity given the moment conditions.
+Our final model is log(mass) ~ (type + site + element_Rb + element_Sr + element_Y * element_Zr). We have reasonable confidence in its validity given the moment conditions.
